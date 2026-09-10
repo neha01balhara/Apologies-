@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Aatish 💛</title>
+<style>
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    min-height:100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background:linear-gradient(145deg,#fff7f1,#f8f0ff 55%,#eef8ff);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    color:#3d3440;
+  }
+  .blob{position:fixed;border-radius:50%;filter:blur(2px);opacity:.55;animation:float 7s ease-in-out infinite}
+  .b1{width:180px;height:180px;background:#ffd6df;top:-55px;left:-45px}
+  .b2{width:220px;height:220px;background:#dcd4ff;right:-75px;bottom:-65px;animation-delay:1.5s}
+  .b3{width:90px;height:90px;background:#fff0ad;right:12%;top:8%;animation-delay:3s}
+  @keyframes float{50%{transform:translateY(-15px) translateX(10px)}}
+
+  .phone{
+    width:min(92vw,430px);
+    height:min(90vh,760px);
+    background:rgba(255,255,255,.76);
+    backdrop-filter:blur(14px);
+    border:1px solid rgba(255,255,255,.9);
+    border-radius:34px;
+    box-shadow:0 25px 70px rgba(86,64,93,.18);
+    padding:24px;
+    position:relative;
+    overflow:hidden;
+  }
+  .screen{
+    height:100%;
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    animation:enter .55s ease;
+  }
+  .screen.active{display:flex}
+  @keyframes enter{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:none}}
+  .emoji{font-size:64px;margin-bottom:18px;animation:bob 2.5s ease-in-out infinite}
+  @keyframes bob{50%{transform:translateY(-7px) rotate(2deg)}}
+  h1{font-size:34px;line-height:1.12;margin:0 0 16px;font-weight:800}
+  h2{font-size:26px;line-height:1.2;margin:0 0 16px}
+  p{font-size:18px;line-height:1.65;margin:0;max-width:340px;color:#665c67}
+  .small{font-size:14px;color:#948b95;margin-top:13px}
+  button{
+    margin-top:30px;border:0;border-radius:999px;padding:14px 27px;
+    background:#403744;color:white;font-size:16px;font-weight:700;
+    cursor:pointer;box-shadow:0 10px 22px rgba(64,55,68,.2);
+    transition:.2s transform,.2s box-shadow;
+  }
+  button:hover{transform:translateY(-2px);box-shadow:0 13px 25px rgba(64,55,68,.26)}
+  .card{
+    background:rgba(255,255,255,.82);border-radius:25px;padding:25px 22px;
+    box-shadow:0 12px 30px rgba(70,55,75,.1);max-width:350px;
+    border:1px solid rgba(255,255,255,.9)
+  }
+  .heart{position:absolute;font-size:20px;animation:rise 5s linear infinite;opacity:0}
+  @keyframes rise{0%{transform:translateY(30px) scale(.8);opacity:0}15%{opacity:.8}100%{transform:translateY(-650px) translateX(35px) rotate(20deg);opacity:0}}
+  .progress{position:absolute;top:16px;left:24px;right:24px;height:4px;background:#eee8ef;border-radius:9px;overflow:hidden}
+  .bar{height:100%;background:#403744;width:14%;transition:.4s}
+  .signature{margin-top:25px;font-weight:700;color:#403744}
+</style>
+</head>
+<body>
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+
+<div class="phone">
+  <div class="progress"><div class="bar" id="bar"></div></div>
+
+  <div class="screen active">
+    <div class="emoji">🥺</div>
+    <h1>Hey Aatish…</h1>
+    <p>I owe you a proper apology.</p>
+    <button onclick="next()">Can you give me a minute?</button>
+  </div>
+
+  <div class="screen">
+    <div class="emoji">📩</div>
+    <div class="card">
+      <h2>About that mail…</h2>
+      <p>I know I didn't reply to your mail, and honestly, I feel really bad about it.</p>
+      <p class="small">There is a reason… but it's not an excuse.</p>
+    </div>
+    <button onclick="next()">Next</button>
+  </div>
+
+  <div class="screen">
+    <div class="emoji">📨</div>
+    <div class="card">
+      <h2>I thought it was just that letter… 😭</h2>
+      <p>I thought it was just that letter, so I didn't realize there was something further to it. That part genuinely didn't come to my notice.</p>
+      <p class="small">And I feel really bad that I didn't notice it earlier.</p>
+    </div>
+    <button onclick="next()">Keep going</button>
+  </div>
+
+  <div class="screen">
+    <div class="emoji">💭</div>
+    <div class="card">
+      <h2>And that's the part I'm sorry for.</h2>
+      <p>I should have been more careful. I should have checked. Most importantly, I should never have left a mail that meant so much to you unanswered.</p>
+    </div>
+    <button onclick="next()">Next</button>
+  </div>
+
+  <div class="screen">
+    <div class="emoji">🫶</div>
+    <div class="card">
+      <h2>Your mail was actually so sweet.</h2>
+      <p>Probably one of the sweetest mails I've ever received from a friend.</p>
+      <p class="small">And the fact that you took the time to write it makes me feel even worse that I didn't respond.</p>
+    </div>
+    <button onclick="next()">One last thing…</button>
+  </div>
+
+  <div class="screen">
+    <div class="emoji">🥹</div>
+    <div class="card">
+      <h2>Aatish, I'm really sorry.</h2>
+      <p>I wasn't ignoring you. I wasn't taking your words for granted. I was just careless, and unfortunately, my carelessness made it look like I didn't care.</p>
+    </div>
+    <button onclick="next()">Read this ❤️</button>
+  </div>
+
+  <div class="screen">
+    <div class="emoji">💛</div>
+    <h1>I'm sorry, Aatish.</h1>
+    <p>I should have been more grateful for the effort you put into that mail. It was so stupid of me not to notice it earlier. Your words deserved to be appreciated, and I'm genuinely sorry that I didn't show you that.</p>
+    <div class="signature">— Your very sorry friend</div>
+    <button onclick="restart()">Start again 🥺</button>
+  </div>
+</div>
+
+<div id="sorryOverlay" style="display:none;position:fixed;inset:0;background:rgba(255,255,255,.88);backdrop-filter:blur(8px);z-index:20;align-items:center;justify-content:center;padding:22px;">
+  <div style="background:white;border-radius:30px;padding:22px;max-width:430px;width:92vw;text-align:center;box-shadow:0 20px 60px rgba(70,55,75,.2);">
+    <img src="sorry_crying_baby.gif" alt="Crying baby saying I'm sorry" style="width:100%;max-width:360px;border-radius:22px;">
+  </div>
+</div>
+
+<script>
+const screens=[...document.querySelectorAll('.screen')];
+let i=0;
+const bar=document.getElementById('bar');
+function next(){
+  screens[i].classList.remove('active');
+  i=(i+1)%screens.length;
+  screens[i].classList.add('active');
+  bar.style.width=((i+1)/screens.length*100)+'%';
+  burst();
+}
+function showSorry(){
+  document.getElementById('sorryOverlay').style.display='flex';
+  burst();
+}
+function closeSorry(){
+  document.getElementById('sorryOverlay').style.display='none';
+}
+function restart(){
+  screens[i].classList.remove('active'); i=0;
+  screens[0].classList.add('active'); bar.style.width=(1/screens.length*100)+'%';
+}
+function burst(){
+  for(let n=0;n<4;n++){
+    const e=document.createElement('div');
+    e.className='heart'; e.textContent=['💛','✨','🌼','🤍'][Math.floor(Math.random()*4)];
+    e.style.left=(20+Math.random()*60)+'%';
+    e.style.bottom='-20px';
+    e.style.animationDelay=(Math.random()*.5)+'s';
+    document.querySelector('.phone').appendChild(e);
+    setTimeout(()=>e.remove(),5200);
+  }
+}
+</script>
+</body>
+</html>
